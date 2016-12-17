@@ -23,8 +23,14 @@ function search_medicine_func( $atts ){
 	$html = '<div class="search-box">
 				<h3>Find Your Specialty Drug</h3>
 				<form>
-					<input type="text" class="form-control input-lg" placeholder="enter brand or generic name" /> 
-					<button type="submit" class="btn btn-cta">Search Drugs</button>
+					<div class="my-row">
+						<div class="column-left form-control-column">
+							<input type="text" class="form-control input-lg" placeholder="enter brand or generic name" /> 
+						</div>
+						<div class="column-left button-column">
+							<button type="submit" class="btn btn-cta">Search Drugs</button>
+						</div>
+					</div>
 				</form>
 				<p>
 					or <a href="#">Browse all Drugs</a>
