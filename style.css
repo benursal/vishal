@@ -1,0 +1,56 @@
+/*
+	Theme Name: SpecialtyRx Journey
+	Description: a Genesis Child Theme
+	Author: Benedict Ursal
+
+	Template: genesis
+*/
+
+@import url('../genesis/style.css');
+
+
+
+.title-area{
+	width:40%;
+	padding:0;
+}
+
+.site-header .widget-area{
+	width:60%;
+}
+
+.site-header{
+	min-height:0;
+}
+
+.site-header .wrap{
+	width:1100px;
+	padding:5px 0;
+}
+
+.header-image .site-title > a {
+	background: url(http://localhost/wordpress/wp-content/uploads/2016/12/logo-normal.png) no-repeat;
+	background-size:400px;
+	height:78px;
+}
+
+.page-template-full-width .site-inner{
+	padding-top:0;
+	width:100%;
+	max-width:none;
+}
+
+.page-template-full-width .content-sidebar-wrap{
+	width:100%;
+}
+
+.page-template-full-width .content{
+	width:100%;
+}
+
+
+.page-template-full-width .column{
+	width:1100px;
+	margin:0 auto;
+}
+
