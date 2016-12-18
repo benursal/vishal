@@ -36,6 +36,10 @@ p{
 	line-height:30px;
 }
 
+.text-center{
+	text-align:center;
+}	
+
 .btn{
 	font-family: 'Bitter', serif;
 }
@@ -55,6 +59,38 @@ p{
 	background-color:#4eb4a4;
 }
 
+.btn-browse-all{
+	font-size:20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+}
+
+.btn-simple{
+	font-size:20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+	border:2px solid #0077a6;
+	border-radius:6px;
+	text-decoration:none;
+	padding:10px 20px;
+}
+
+.btn-simple:hover,
+.btn-simple:active,
+.btn-simple:focus{
+	background-color:#0077a6;
+	color:white;
+}
+
+.btn-block{
+	width:100%;
+	display:block;
+}
+
+.btn-md{
+	font-size:20px;
+}
+
 .my-row::after{
 	clear:both;
 	content: "";
@@ -67,6 +103,13 @@ p{
 
 .column-right{
 	float:right;
+}
+
+.white-box{
+	background: rgba(255,255,255,1);
+    border-radius: 10px;
+    padding: 40px 60px;
+    box-shadow: 0 0 21px rgba(0, 0, 0, 0.16)
 }
 
 .title-area{
@@ -143,9 +186,9 @@ p{
 }
 
 .search-box h3{
-	color:#00a4e6;
+	color:#00a4e6 !important;
 	font-weight:normal;
-	font-size:32px;
+	font-size:32px !important;
 	text-align:center;
 }
 
@@ -174,7 +217,9 @@ p{
 	margin-top:20px;
 }
 
-#search-cta h1{
+/* search cta */
+
+#search-cta h3{
 	color:white;
 	font-size:40px;
 	line-height:60px;
@@ -191,3 +236,41 @@ p{
 	margin-top:30px;
 }
 
+/* Disease Categories */
+#disease-categories .inner-column{
+	width:85%;
+	margin-left:7.5%;
+}
+
+#disease-categories h3{
+	font-size:40px;
+	line-height:50px;
+	margin-top:40px;
+}
+
+#disease-categories p{
+	font-size:20px;
+	line-height:40px;
+	margin-top:30px;
+}
+
+.d-categories{
+	width:80%;
+	margin-left:12.5%;
+	padding-top:20px;
+}
+
+.d-categories .column-left{
+	width:45%;
+	text-align:center;
+	padding-left:2.5%;
+	padding-right:2.5%;
+}
+
+.d-categories .column-left.left{
+	
+}
+
+.d-categories .column-left.right{
+	
+}
