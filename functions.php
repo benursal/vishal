@@ -63,7 +63,7 @@ function featured_disease_categories_func( $atts ){
 	
 	//if( 
 	
-	$html = '<div class="d-categories">
+	$html = '<div class="d-categories col-80 with-offset">
 				<div class="my-row">';
 				
 			foreach( $diseases as $row )
@@ -81,7 +81,8 @@ function featured_disease_categories_func( $atts ){
 				<a href="#" class="btn btn-browse-all">
 					Browse All Diseases <i class="fa fa-caret-right" aria-hidden="true"></i>
 				</a>
-  			 </p>';
+  			 </p>
+			 </div>';
 			 
 	return $html;
 }
