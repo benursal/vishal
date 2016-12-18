@@ -260,6 +260,10 @@ p{
 	padding-top:20px;
 }
 
+.d-categories .my-row .column-left{
+	margin-top:10px;
+}
+
 .d-categories .column-left{
 	width:45%;
 	text-align:center;

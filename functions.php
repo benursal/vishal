@@ -47,23 +47,35 @@ function search_medicine_func( $atts ){
 }
 add_shortcode( 'search_medicine', 'search_medicine_func' );
 
+function show_pre( $arr )
+{
+	echo '<pre>';
+	print_r( $arr );
+	echo '</pre>';
+}
+
 function featured_disease_categories_func( $atts ){
 	
+	// get items for menu named "Featured Diseases"
+	$diseases = wp_get_nav_menu_items('Featured Diseases');
+	
+	//show_pre( $diseases );
+	
+	//if( 
+	
 	$html = '<div class="d-categories">
-				<div class="my-row">
-					<div class="column-left left">
-						<a href="#" class="btn btn-md btn-block btn-simple">
-							Breast Cancer <i class="fa fa-caret-right" aria-hidden="true"></i>
-						</a>
-					</div>
-					<div class="column-left right">
-						<a href="#" class="btn btn-md btn-block btn-simple">
-							Breast Cancer <i class="fa fa-caret-right" aria-hidden="true"></i>
-						</a>
-					</div>
-					<div style="clear:both"></div>
-				</div>
-			 </div>
+				<div class="my-row">';
+				
+			foreach( $diseases as $row )
+			{
+				$html .= '<div class="column-left">
+							<a href="'.$row->url.'" class="btn btn-md btn-block btn-simple">'
+								.$row->title. ' <i class="fa fa-caret-right" aria-hidden="true"></i>
+							</a>
+						</div>';				
+			}	
+					
+	$html .= '</div>
 			 
 			 <p class="text-center">
 				<a href="#" class="btn btn-browse-all">
