@@ -138,6 +138,20 @@ p{
 	padding:5px 0;
 }
 
+.genesis-nav-menu a{
+	color:#717171 !important;
+	font-size:18px;
+}
+
+.genesis-nav-menu a:hover,
+.genesis-nav-menu a:active,
+.genesis-nav-menu a:focus,
+.genesis-nav-menu li.current-menu-item a
+{
+	color:#0077a6 !important;
+	text-decoration:none;
+}
+
 .header-image .site-title > a {
 	background: url(http://localhost/wordpress/wp-content/uploads/2016/12/logo-normal.png) no-repeat;
 	background-size:400px;

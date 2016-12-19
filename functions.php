@@ -22,6 +22,8 @@ function enqueue_font_awesome() {
 
 }
 
+add_theme_support( 'genesis-footer-widgets', 3 );
+
 // SHORTCODES 
 
 function search_medicine_func( $atts ){
