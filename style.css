@@ -161,7 +161,7 @@ p{
 }
 
 .header-image .site-title > a {
-	background: url(http://localhost/wordpress/wp-content/uploads/2016/12/logo-normal.png) no-repeat;
+	background: url(http://www.specialtyrxjourney.com/wp-content/uploads/2016/12/logo-normal.png) no-repeat;
 	background-size:400px;
 	height:78px;
 }
@@ -324,6 +324,16 @@ p{
 	margin-top:30px;
 }
 
+/* hard process */
+#hard-process h3,
+#hard-process p{
+	color:white;
+}
+
+#hard-process p{
+	font-size:20px;
+}
+
 
 /* footer */
 .footer-widgets, .site-footer{
@@ -360,20 +370,22 @@ p{
 	font-size:16px;
 }
 
-.footer-widgets-1, 
-.footer-widgets-2, 
-.footer-widgets-3{
-	width: 21.875%; /* 252px / 1152px */
+.footer-widgets-1{
+	width: 11%; /* 252px / 1152px */
+}
+
+.footer-widgets-2{
+	width: 14.875%; /* 252px / 1152px */
+	margin-left:17%;
 }
 
 .footer-widgets-1, 
 .footer-widgets-2{
 	float: left;
-	margin-right: 4.166666666%; /* 48px / 1152px */
 }
 .footer-widgets-3{
 	float: right;
-	width:30%;
+	width:26%;
 }
 
 .footer-widgets h4.widget-title{
@@ -381,6 +393,8 @@ p{
 	font-family: 'Open Sans', sans-serif;
 	font-size:18px;
 	margin-bottom:30px;
+	border-bottom:1px solid #4f4f4f;	
+	padding-bottom:15px;
 }
 
 .site-footer{
