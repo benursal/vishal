@@ -1,0 +1,117 @@
+@media (max-width: 420px){
+	
+}
+
+@media (max-width: 680px){
+	
+}
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px){
+	.page-template-full-width .column {
+		width: 96%;
+	}
+	
+
+}
+
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px){	
+	.page-template-full-width .column {
+		width: 750px;
+	}
+	
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px){
+  .page-template-full-width .column{
+    width: 970px;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	
+
+}
+
+@media (min-width: 1400px) and (max-width: 1919px) {
+	
+}
+
+@media (min-width: 1920px) and (max-width: 2559px) {
+	
+}
+
+@media (min-width: 2560px) and (max-width: 2879px) {
+	
+	
+}
+
+
+@media (min-width: 2880px) and (max-width: 3839px) {
+	
+	.panel-grid{
+		width:1366px;
+	}
+	
+	
+}
+
+@media (min-width: 3840px) and (max-width: 4095px) {
+	
+	.panel-grid{
+		width:1366px;
+	}
+	
+}
+
+/** 4k devices ***/
+@media (min-width: 4096px) {
+	
+	.panel-grid{
+		width:1366px;
+	}
+	
+	
+}
+
+.panel-grid {
+	width: 100%;
+}
+
+@media only screen and (max-width: 880px){
+	.site-inner, .wrap {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+/* widths */
+
+
+/*
+@media (max-width: 767px){
+	.page-template-full-width .column {
+		width: 700px;
+	}
+}
+
+@media (min-width: 768px) {
+  .page-template-full-width .column {
+    width: 95%;
+  }
+}
+@media (min-width: 992px) {
+  .page-template-full-width .column{
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .page-template-full-width .column{
+    width: 1100px;
+  }
+}
+*/

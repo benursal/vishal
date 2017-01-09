@@ -418,3 +418,126 @@ p{
 	font-weight:bold;
 	color:white;
 }
+
+
+
+
+
+/* BHWW Mobile Responsive Menu (footer nav with anchor)
+------------------------------------------------------------ */
+
+.mobile-footer-nav-link {
+	display: none;
+}
+
+.mobile-footer-nav-link a.mobile-nav-link-button {
+	font-size: 13px; /* adjust to suit your theme */
+	padding: 3px 6px; /* adjust to suit your theme */
+}
+
+.mobile-footer-nav-link-icon {
+	font-size: 12px;
+}
+
+#mobile-footer-nav-menu {
+	display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+	
+	#title-area,
+	.title-area {
+		max-width: 70%; /* for iOS */ /* you may or may not need this...*/
+	}
+	
+	#header .widget_nav_menu,
+	#nav,
+	#subnav,
+	.site-header .widget_nav_menu,
+	.nav-primary,
+	.nav-secondary,
+	nav.nav-header {
+		display: none;
+	}
+	
+	.mobile-footer-nav-link {
+		display: inline-block;
+		float: right;
+		/* line-height: 2; */ /* adjust to suit your theme - Metro needs this */
+		margin: 8px; /* adjust to suit your theme */
+		max-width: 30%; /* for iOS */
+		white-space: nowrap;
+	}
+	
+	#mobile-footer-nav-menu {
+		background: #f8f8f8;
+		clear: both;
+		color: #747474;
+		display: block;
+		font-size: inherit;
+	}
+
+	#mobile-footer-nav-menu .wrap {
+		overflow: hidden;
+		padding: 0;
+		width: auto;
+	}
+	
+	#mobile-footer-nav-menu .mobile-footer-nav-menu-top-link a {
+		/* line-height: 1.5; */ /* adjust to suit your theme - Metro needs this */
+		margin: 0;
+	}
+	
+	#mobile-footer-nav-menu .mobile-footer-nav-menu-top-link a.button {
+		border-radius: 0;
+		display: block;
+		font-size: inherit; /* adjust to suit your theme */
+		padding: 12px;
+		text-align: center;
+	}
+
+	#mobile-footer-nav-menu .widget {
+		background: none;
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#mobile-footer-nav-menu .widget h4 {
+		display: none;
+	}
+	
+	#mobile-footer-nav-menu .widget_nav_menu ul li {
+		list-style: none;
+	}
+	
+	#mobile-footer-nav-menu .widget_nav_menu a {
+		border-bottom: 1px solid #b2b2b2;
+		display: block;
+		/* line-height: 1.5; */ /* adjust to suit your theme - Metro needs this */
+		padding: 12px 20px;
+		text-decoration: none;
+	}
+	
+	#mobile-footer-nav-menu .widget_nav_menu li ul li a {
+		padding-left: 40px;
+	}
+	
+	#mobile-footer-nav-menu .widget_nav_menu li ul li ul li a {
+		padding-left: 60px;
+	}
+	
+	#mobile-footer-nav-menu .widget_nav_menu li ul li ul li ul li a {
+		padding-left: 80px;
+	}
+	
+	#mobile-footer-nav-menu .current-menu-item a {
+		background-color: #e7e7e7;
+	}
+	
+	#mobile-footer-nav-menu .current-menu-item ul.sub-menu a {
+		background-color: #fff;
+	}
+	
+} /* End BHWW Mobile Responsive Menu (footer nav with anchor) */
