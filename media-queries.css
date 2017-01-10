@@ -2,17 +2,125 @@
 	
 }
 
-@media (max-width: 680px){
+@media only screen and (max-width: 600px){
+	#header .widget_nav_menu, #nav, #subnav, .site-header .widget_nav_menu, .nav-primary, .nav-secondary, nav.nav-header{
+		display:block;
+	}
 	
+	.site-header .title-area{
+		width:50% !important;
+		margin-left:25% !important;
+	}
 }
 
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px){
-	.page-template-full-width .column {
-		width: 96%;
+	
+	body{
+		overflow-x:hidden;
+		
 	}
 	
-
+	.page-template-full-width .column {
+		width: 100%;
+	}
+	
+	.page-template-full-width .wrap{
+		width:100%;
+	}
+	
+	
+	.title-area{
+		width:37%;
+		margin-left:31.5%;
+	}
+	
+	.header-widget-area{
+		width:100% !important;
+		margin-top:10px
+	}
+	
+	
+	.header-image .site-title > a{
+		background-size:230px;
+		height:65px;
+	}
+	
+	.widget_nav_menu{
+		display:block !important;
+	}
+	
+	.genesis-nav-menu li a{
+		font-size:14px;
+		padding:10px 20px;
+	}
+	
+	.footer-widgets .widget-area{
+		float:left;
+		width:40%;
+		margin-left:30%;
+		margin-bottom:50px;
+		text-align:center;
+	}
+	
+	.page-template-full-width .column h3{
+		font-size:30px;
+		line-height:45px;
+	}
+	
+	
+	/* hero */
+	#pgc-w587432297c6db-0-0{
+		width:100% !important;
+		
+	}
+	
+	#hero-area .search-box{
+		width:100%;
+	}
+	
+	#pgc-w587432297c6db-0-0 h1{
+		text-align:center !important;
+		font-size:30px !important;
+		line-height:45px !important;
+	}
+	
+	#pgc-w587432297c6db-0-1{
+		display:none;
+	}
+	
+	.search-box h3{
+		font-size:25px !important;
+	}
+	
+	.search-box .form-control-column, 
+	.search-box .button-column{
+		width:100%;
+		float:left;
+		margin-left:0%;
+		margin-bottom:5px;
+	}
+	
+	#disease-categories .inner-column{
+		width:100%;
+		margin-left:0%;
+	}
+	
+	.d-categories .column-left{
+		width:100%;
+		margin-left:0%;
+	}
+	
+	#search-cta .col-80.with-offset{
+		width:100%;
+		margin-left:0%;
+	}
+	
+	#disease-categories h3{
+		font-size:30px;
+		line-height:45px;
+		margin-top:30px;
+	}
 }
 
 @media(max-width: 780px){	
@@ -44,7 +152,8 @@
 	
 	#feature1 .sow-image-container,
 	#feature2 .sow-image-container{
-		width:500px;
+		width:80%;
+		margin-left:10%;
 		margin:0 auto;
 	}
 	
