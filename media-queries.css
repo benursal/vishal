@@ -15,21 +15,206 @@
 
 }
 
-/* No media query since this is the default in Bootstrap */
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px){	
-	.page-template-full-width .column {
-		width: 750px;
+@media(max-width: 780px){	
+	
+	#feature1,
+	#feature2{ 
+		display: table; 
+	}
+	
+	#pgc-4-feature1-0{
+		display: table-footer-group;
+	}
+	
+	#pgc-4-feature1-1{
+		display: table-header-group;
+	}
+	
+	#feature1 .textwidget,
+	#feature2 .textwidget{
+		padding:30px;
+	}
+	
+	#feature1 h3,
+	#feature2 h3{
+		font-size:30px;
+		line-height:45px;
+		margin-bottom:30px;
+	}
+	
+	#feature1 .sow-image-container,
+	#feature2 .sow-image-container{
+		width:500px;
+		margin:0 auto;
 	}
 	
 }
 
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px){	
+	
+	body{
+		overflow-x:hidden;
+		
+	}
+	
+	.page-template-full-width .column{
+		width: 100%;
+		
+	}
+	
+	.page-template-full-width .wrap{
+		
+	}
+	
+	.site-header .wrap{
+		
+		width:100%;
+	}
+	
+	.site-footer .wrap{
+		
+		width:100%;
+	}
+	
+	.footer-widgets .wrap {
+		
+		width:100%;
+	}
+	
+	.title-area{
+		width:37%;
+		margin-left:31.5%;
+	}
+	
+	.header-widget-area{
+		width:100% !important;
+		margin-top:10px
+	}
+	
+	
+	.header-image .site-title > a{
+		background-size:290px;
+		height:65px;
+	}
+	
+	.genesis-nav-menu li a{
+		font-size:14px;
+		padding:10px 20px;
+	}
+	
+	/* hero */
+	#pgc-w587432297c6db-0-0{
+		width:100% !important;
+		
+	}
+	
+	#hero-area .search-box{
+		width:100%;
+	}
+	
+	#pgc-w587432297c6db-0-0 h1{
+		text-align:center !important;
+	}
+	
+	#pgc-w587432297c6db-0-1{
+		display:none;
+	}
+	
+	.btn-simple{
+		font-size:18px;
+	}
+	
+	#disease-categories .white-box{
+		width:100%;
+		margin-left:0;
+		padding:40px;
+	}
+	
+	.d-categories .column-left{
+		width:80%;
+		margin-left:10%;
+	}
+	
+	#feature1 .column{
+		padding-bottom:10px;
+	}
+	
+	#search-cta .col-80.with-offset{
+		width:100%;
+		margin-left:0%;
+	}
+	
+	
+	.footer-widgets .widget-area{
+		float:left;
+		margin-left:5%;
+	}
+	
+	.footer-widgets-1{
+		width:20%;
+		margin-left:0% !important;
+	}
+	
+	.footer-widgets-2{
+		width:27%;
+	}
+	
+	.footer-widgets-3{
+		width:35%;
+	}
+}
+
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px){
-  .page-template-full-width .column{
-    width: 970px;
-  }
+	.page-template-full-width .column{
+		width: 970px;
+	}
+	
+	.title-area{
+		margin-top:10px;
+	}
+	
+	.header-widget-area{
+		
+	}
+	
+	.header-image .site-title > a{
+		background-size:320px;
+		height:65px;
+	}
+	
+	.genesis-nav-menu{
+		text-align:right;
+	}
+	
+	.genesis-nav-menu li a{
+		font-size:14px;
+		padding:32px 10px;
+	}
+	
+	/* hero */
+	#pgc-w587432297c6db-0-0{
+		width:80% !important;
+		margin-left:10%;
+	}
+	
+	#hero-area .search-box{
+		width:100%;
+	}
+	
+	#pgc-w587432297c6db-0-0 h1{
+		text-align:center !important;
+	}
+	
+	#pgc-w587432297c6db-0-1{
+		display:none;
+	}
+	
+	.btn-simple{
+		font-size:18px;
+	}
 }
 
 /* Large devices (large desktops, 1200px and up) */

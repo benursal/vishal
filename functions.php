@@ -9,7 +9,7 @@ define( 'Child_Theme_Name', __( 'SpecialtyRx Journey', 'genesis-child' ) );
 add_theme_support( 'html5' );
 
 //* Add HTML5 responsive recognition
-add_theme_support( 'genesis-responsive-viewport' );
+//add_theme_support( 'genesis-responsive-viewport' );
 
 //* Remove the entry title (requires HTML5 theme support)
 remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
@@ -21,6 +21,11 @@ function enqueue_font_awesome() {
 	wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css' );
 	wp_enqueue_style( 'media-queries', get_stylesheet_directory_uri() . '/media-queries.css?ver='.date('YmdHis') );
 
+}
+
+add_action( 'genesis_meta', 'sp_viewport_meta_tag' );
+function sp_viewport_meta_tag() {
+ echo '<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">';
 }
 
 add_theme_support( 'genesis-footer-widgets', 3 );
