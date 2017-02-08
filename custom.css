@@ -1,0 +1,239 @@
+
+#simple-hero{
+	text-align:center;
+}
+
+#simple-hero h1,
+#simple-hero h4{
+	color:white;
+}
+
+#simple-hero h4{
+	font-size:30px;
+}
+
+#drug-main-content{
+	margin-bottom:50px !important;
+}
+
+#drug-main-content .panel-grid-cell{
+	float:left;
+}
+
+#drug-main-content #drug-card{
+	width:70%;
+	background: rgba(255,255,255,1);
+    border-radius: 10px;
+    box-shadow: 0 0 21px rgba(0, 0, 0, 0.16);
+}
+
+#drug-main-content #sidebar-right{
+	width:27%;
+	margin-left:3%;
+	
+}
+
+#drug-card table{
+	background-color:white;
+	margin-top:10px;
+	margin-bottom:0px;
+	
+}
+
+#drug-card table tr:nth-child(even){
+	background-color:#f8f8f8
+}
+
+#drug-card table tr td{
+	padding:20px;
+	font-size:15px;
+	border:0;
+	vertical-align:top;
+}
+
+#drug-card table tr td p{
+	margin-bottom:0;
+}
+
+#drug-card table tr td ul{
+	margin-top:20px;
+}
+
+#drug-card table tr td ul li{
+	margin-bottom:0px;
+}
+
+#drug-card table tr td:first-child { 
+	font-weight:bold;
+	width:25%;
+	font-size:14px;
+}
+
+#the-cta{
+	background-color:#eef5f8;
+}
+
+#the-cta h1{
+	color:#00a4e6;
+	text-align:center;
+	font-weight:normal;
+}
+
+#the-cta h3{
+	color:#333;
+	text-align:center;
+	font-weight:normal;
+	font-size:20px;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+#the-cta p{
+	text-align:center;
+}
+
+
+/** browse drugs **/
+.disease-sidebar{
+	width:30%;
+	float:left;
+	background-color:#ebf3f6;
+	padding:25px 15px;
+	border-radius:10px;
+}
+
+.disease-sidebar h3{
+	font-weight:400;
+	text-align:center;
+}
+
+ul.diseases{
+	margin-top:15px;
+}
+
+ul.diseases li{
+	border-bottom:1px solid #d7e5ea;
+	padding:10px;
+}
+
+ul.diseases li a{
+	font-size:14px;
+	color:#333;
+	text-decoration:none;
+}
+
+ul.diseases li a:hover{
+	text-decoration:underline;
+}
+
+ul.diseases li ul.sub-disease{
+	margin-top:10px;
+}
+
+ul.diseases li ul.sub-disease li{
+	border:0;
+	padding:5px 10px 5px 25px;
+}
+
+ul.diseases li.current a{
+	font-weight:bold;
+}
+
+.post-type-archive-specialty_drug{
+	background-color:#ebf3f6;
+}
+
+.post-type-archive-specialty_drug .content{
+	float:left;
+	width:65%;
+	padding:20px 40px;
+}
+
+.post-type-archive-specialty_drug .site-inner{
+	width:80%;
+	max-width:none;
+	background-color:white;
+	margin:20px auto 40px auto;
+	border-radius: 10px;
+    padding: 40px 20px;
+    box-shadow: 0 0 21px rgba(0, 0, 0, 0.16);
+}
+
+.post-type-archive-specialty_drug .content-sidebar-wrap{
+	padding-top:0;
+	
+}
+
+/* drug list */
+#specialty-drug-list{
+	margin-top:30px;
+}
+
+.specialty-drug{
+	padding:20px 5px;
+	border-bottom:1px solid #ececec;
+}
+
+.specialty-drug h3{
+	font-weight:400;
+	font-size:20px;
+}
+
+.specialty-drug h3 a{
+	color:#333;
+	text-decoration:none;
+}
+
+.specialty-drug h3 a:hover{
+	text-decoration:underline;
+}
+
+.specialty-drug .sd-excerpt{
+	font-size:14px;
+	line-height:25px;
+	margin-top:25px;
+}
+
+.specialty-drug .read-more{
+	font-weight:bold;
+	font-size:14px;
+	text-decoration:none;
+}
+
+.specialty-drug .read-more:hover{
+	text-decoration:underline;
+}
+
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px){
+	#drug-main-content #drug-card{
+		width:90%;
+		margin-left:5%;
+	}
+
+	#drug-main-content #sidebar-right{
+		display:none;
+	}
+
+	#drug-card table{
+		width:100%;
+	}
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px){	
+	#drug-main-content #drug-card{
+		width:80%;
+		margin-left:10%;
+	}
+
+	#drug-main-content #sidebar-right{
+		display:none;
+	}
+
+	#drug-card table{
+		width:100%;
+	}
+}

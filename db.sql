@@ -2,7 +2,7 @@
 SQLyog Community v12.04 (32 bit)
 MySQL - 5.6.21 : Database - wordpress
 *********************************************************************
-*/
+*/
 
 /*!40101 SET NAMES utf8 */;
 
