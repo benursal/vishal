@@ -8,56 +8,10 @@ add_action('genesis_before_content', 'archive_with_sidebar');
  
 function archive_with_sidebar()
 {
-	$diseases = get_terms(
-		array(
-			'taxonomy' => 'disease',
-			'hide_empty' => false,
-			'parent' => 0,
-			'order_by' => 'name',
-			'order' => 'ASC'
-		)
-	);
+	//$queried_object = get_queried_object();
+	//show_pre($queried_object);
 	
-	echo '<div class="disease-sidebar">';
-	echo '<h3>Disease Categories</h3>';
-	echo '<ul class="diseases">';
-	echo '<li class="current"><a href="'.site_url('specialty_drug').'">All</a></a>';
-	
-	// loop through the diseases
-	foreach( $diseases as $disease )
-	{
-		echo '<li><a href="'.site_url('disease').'/'.$disease->slug.'">'.$disease->name.'</a>';
-		
-		// get children diseases
-		$child_diseases = get_terms(
-			array(
-				'taxonomy' => 'disease',
-				'hide_empty' => false,
-				'parent' => $disease->term_id,
-				'order_by' => 'name',
-				'order' => 'ASC'
-			)
-		);
-		
-		// if there are children diseases
-		if( count( $child_diseases ) > 0 )
-		{
-			echo '<ul class="sub-disease">';
-			
-			// loop through the children
-			foreach( $child_diseases as $child )
-			{
-				echo '<li><a href="'.site_url('disease').'/'.$child->slug.'">'.$child->name.'</a>';
-			}
-			
-			echo '</ul>';
-		}
-		
-		echo '</li>';
-	}
-	
-	echo '</ul>';
-	echo '</div>';
+	show_disease_sidebar();
 }
  
 remove_action ('genesis_loop', 'genesis_do_loop'); // Remove the standard loop
@@ -68,6 +22,8 @@ function custom_do_grid_loop() {
 	echo '<div class="page hentry entry">';
 	echo '<h1 class="entry-title">'. get_the_title() .'</h1>';
 	echo '<div class="entry-content">' . get_the_content() ;
+	
+	show_small_search_form();
 	
 	$args = array(
 		'post_type' => 'specialty_drug', // enter your custom post type

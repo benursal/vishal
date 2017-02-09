@@ -1,4 +1,477 @@
 
+
+@import url('../genesis/style.css');
+@import url('https://fonts.googleapis.com/css?family=Bitter:400,700|Open+Sans:400,400i,700');
+
+/* 
+font-family: 'Bitter', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	color:#333;
+}
+
+a, a:hover{
+	color:#0077a6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5{
+	font-family: 'Bitter', serif;
+}
+
+p{
+	font-size:16px;
+	line-height:30px;
+}
+
+.text-center{
+	text-align:center;
+}	
+
+.btn{
+	font-family: 'Bitter', serif;
+}
+
+.btn-cta{
+	font-size:20px;
+	border-bottom:3px solid #4eb4a4;
+	background-color:#57c8b6;
+	padding-top:14px;
+	padding-bottom:14px;
+}
+
+.btn-cta:hover,
+.btn-cta:active,
+.btn-cta:focus
+{
+	background-color:#4eb4a4;
+}
+
+.btn-browse-all{
+	font-size:20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+}
+
+.btn-simple{
+	font-size:20px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:bold;
+	border:2px solid #0077a6;
+	border-radius:6px;
+	text-decoration:none;
+	padding:10px 20px;
+}
+
+.btn-simple:hover,
+.btn-simple:active,
+.btn-simple:focus{
+	background-color:#0077a6;
+	color:white;
+}
+
+.btn-block{
+	width:100%;
+	display:block;
+}
+
+.btn-md{
+	font-size:20px;
+}
+
+.img-responsive img{
+	display: block;
+	width: 100% \9;
+	max-width: 100%;
+	height: auto;
+}
+
+.my-row::after{
+	clear:both;
+	content: "";
+	display: table;
+}
+
+.column-left{
+	float:left;
+}
+
+.column-right{
+	float:right;
+}
+
+.col-80{
+	width:80%;
+}
+
+.col-80.with-offset{
+	margin-left:10%;
+}
+
+.white-box{
+	background: rgba(255,255,255,1);
+    border-radius: 10px;
+    padding: 40px 60px;
+    box-shadow: 0 0 21px rgba(0, 0, 0, 0.16)
+}
+
+.title-area{
+	width:40%;
+	padding:0;
+}
+
+.site-header .widget-area{
+	width:60%;
+}
+
+.site-header{
+	min-height:0;
+	background-color:white !important;
+}
+
+.site-header .wrap{
+	width:1100px;
+	padding:5px 0;
+}
+
+.genesis-nav-menu a{
+	color:#717171 !important;
+	font-size:18px;
+	padding: 32px 15px;
+}
+
+.genesis-nav-menu a:hover,
+.genesis-nav-menu a:active,
+.genesis-nav-menu a:focus,
+.genesis-nav-menu li.current-menu-item a
+{
+	color:#0077a6 !important;
+	text-decoration:none;
+}
+
+.header-image .site-title > a {
+	background: url(http://www.specialtyrxjourney.com/wp-content/uploads/2016/12/logo-normal.png) no-repeat;
+	background-size:400px;
+	height:78px;
+}
+
+.page-template-full-width .site-inner, 
+/* .post-type-archive-specialty_drug .site-inner,  */
+.specialty_drug-template-default .site-inner{
+	padding-top:0;
+	width:100%;
+	max-width:none;
+}
+
+.page-template-full-width .entry, 
+/* .post-type-archive-specialty_drug .entry,  */
+.specialty_drug-template-default .entry{
+	margin-bottom:0;
+}
+
+.page-template-full-width .content-sidebar-wrap, 
+/* .post-type-archive-specialty_drug .content-sidebar-wrap,  */
+.specialty_drug-template-default .content-sidebar-wrap{
+	width:100%;
+}
+
+.page-template-full-width .content, 
+/* .post-type-archive-specialty_drug .content,  */
+.specialty_drug-template-default .content{
+	width:100%;
+}
+
+.page-template-full-width .panel-grid, 
+/* .post-type-archive-specialty_drug .panel-grid,  */
+.specialty_drug-template-default .panel-grid{
+	margin-bottom:0 !important;
+	margin-left:0 !important;
+	margin-right:0 !important;
+}
+
+
+.page-template-full-width .column, 
+/* .post-type-archive-specialty_drug .column,  */
+.specialty_drug-template-default .column{
+	width:1100px;
+	margin:0 auto;
+	padding-top:70px;
+	padding-bottom:80px;
+}
+
+.page-template-full-width .column h3, 
+/* .post-type-archive-specialty_drug .column h3,  */
+.specialty_drug-template-default .column h3{
+	font-size:40px;
+	line-height:60px;
+}
+
+.page-template-full-width .column h4, 
+/* .post-type-archive-specialty_drug .column h4,  */
+.specialty_drug-template-default .column h4{
+	font-size:20px;
+	line-height:36px;
+	font-weight:normal;
+	font-family: 'Open Sans', sans-serif;
+	margin-top:20px;
+}
+
+.search-box{
+	background:rgba(255,255,255,.92);
+	padding:40px 40px 10px 40px;
+	border-radius:10px;
+}
+
+.search-box form{
+	margin-top:20px
+}
+
+.search-box .form-control-column{
+	width:65%;
+}
+
+.search-box .button-column{
+	width:34%;
+	margin-left:1%;
+}
+
+.search-box .btn-cta{
+	width:100%;
+}
+
+.search-box h3{
+	color:#00a4e6 !important;
+	font-weight:normal;
+	font-size:32px !important;
+	text-align:center;
+}
+
+.search-box p{
+	text-align:center;
+	margin-top:20px;
+}
+
+
+
+
+
+form.small-search{
+	text-align:center;
+	margin-bottom:70px;
+	padding:30px;
+	background-color:#f5f5f5;
+	border-radius:10px;
+}
+
+form.small-search .form-control-column{
+	width:75%;
+}
+
+form.small-search .form-control{
+	font-size:14px;
+	padding:10px;
+}
+
+form.small-search .button-column{
+	width:25%;
+}
+
+form.small-search .btn-cta{
+	width:100%;
+	font-size:14px;
+	padding:9.5px;
+}
+
+
+
+/* hero area */
+#hero-area .row{
+	min-height:400px;
+	
+	background-size:cover;
+}
+
+#hero-area h1{
+	color:white;
+	font-size:45px !important;
+	
+	text-transform:capitalize;
+	line-height:60px;
+}
+
+#hero-area .search-box{
+	width:90%;
+	margin-top:20px;
+}
+
+/* search cta */
+
+#search-cta h3{
+	color:white;
+}
+
+#search-cta .search-box{
+	width:90%;
+	margin-left:5%;
+	margin-top:30px;
+}
+
+#search-cta .search-box h3{
+	margin-top:0;
+}
+
+/* Disease Categories */
+#disease-categories .inner-column{
+	width:85%;
+	margin-left:7.5%;
+}
+
+#disease-categories h3{
+	font-size:40px;
+	line-height:50px;
+	margin-top:40px;
+}
+
+#disease-categories p{
+	font-size:20px;
+	line-height:40px;
+	margin-top:30px;
+}
+
+.d-categories{
+	padding-top:20px;
+}
+
+.d-categories .my-row .column-left{
+	margin-top:10px;
+}
+
+.d-categories .column-left{
+	width:45%;
+	text-align:center;
+	padding-left:2.5%;
+	padding-right:2.5%;
+}
+
+/* benefits */
+#benefits .widget_sow-features{
+	margin-top:40px;
+}
+
+#benefits h5{
+	margin-top:30px;
+}
+
+/* hard process */
+#hard-process h3,
+#hard-process p{
+	color:white;
+}
+
+#hard-process p{
+	font-size:20px;
+}
+
+
+/* footer */
+.footer-widgets, .site-footer{
+	background-color:#181818 !important
+}
+
+.footer-widgets{
+	padding-top:60px;
+}
+
+.footer-widgets .wrap{
+	width:1100px;
+}
+
+.footer-widgets .menu li{
+	margin-bottom:10px;
+}
+
+.footer-widgets .menu li a{
+	font-size:16px;
+	text-decoration:none;
+}
+
+.footer-widgets .menu li a:hover{
+	text-decoration:underline;
+}
+
+.footer-widgets a{
+	color:white;
+}
+
+.footer-widgets .textwidget{
+	color:white;
+	font-size:16px;
+}
+
+.footer-widgets-1{
+	width: 11%; /* 252px / 1152px */
+}
+
+.footer-widgets-2{
+	width: 14.875%; /* 252px / 1152px */
+	margin-left:17%;
+}
+
+.footer-widgets-1, 
+.footer-widgets-2{
+	float: left;
+}
+.footer-widgets-3{
+	float: right;
+	width:26%;
+}
+
+.footer-widgets h4.widget-title{
+	color:white;
+	font-family: 'Open Sans', sans-serif;
+	font-size:18px;
+	margin-bottom:30px;
+	border-bottom:1px solid #4f4f4f;	
+	padding-bottom:15px;
+}
+
+.site-footer{
+	border:0;
+	padding-bottom:20px;
+}
+
+.site-footer .wrap{
+	width:1100px;
+	padding-top:20px;
+	border-top:1px solid #4f4f4f;	
+}
+
+.site-footer p{
+	text-align:center;
+	color:white;
+	font-size:14px;
+}
+
+.site-footer p a{
+	font-weight:bold;
+	color:white;
+}
+
+
+/* additional CSS */
+.entry-title{display:none}
+.med-bg{
+	background-image:url('http://www.specialtyrxjourney.com/wp-content/uploads/2016/12/blue-med-bg.jpg');
+	background-size:cover;
+	background-position-y:10px;
+}
+
 #simple-hero{
 	text-align:center;
 }
@@ -93,6 +566,13 @@
 }
 
 
+p.message{
+	font-size:20px;
+	line-height:36px;
+	margin-top:30px;
+	text-align:center;
+}
+
 /** browse drugs **/
 .disease-sidebar{
 	width:30%;
@@ -139,17 +619,20 @@ ul.diseases li.current a{
 	font-weight:bold;
 }
 
-.post-type-archive-specialty_drug{
+.archive,
+.search{
 	background-color:#ebf3f6;
 }
 
-.post-type-archive-specialty_drug .content{
+.archive .content,
+.search .content{
 	float:left;
-	width:65%;
-	padding:20px 40px;
+	width:70%;
+	padding:0px 40px 40px 40px;
 }
 
-.post-type-archive-specialty_drug .site-inner{
+.archive .site-inner,
+.search .site-inner{
 	width:80%;
 	max-width:none;
 	background-color:white;
@@ -159,7 +642,18 @@ ul.diseases li.current a{
     box-shadow: 0 0 21px rgba(0, 0, 0, 0.16);
 }
 
-.post-type-archive-specialty_drug .content-sidebar-wrap{
+.search .site-inner{
+	width:60%;
+	margin-top:40px;
+}
+
+.search .content{
+	float:none;
+	width:100%;
+}
+
+.archive .content-sidebar-wrap,
+.search .content-sidebar-wrap{
 	padding-top:0;
 	
 }

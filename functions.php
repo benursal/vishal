@@ -7,6 +7,9 @@ include_once( get_template_directory() . '/lib/init.php' );
 //* We tell the name of our child theme
 define( 'Child_Theme_Name', __( 'SpecialtyRx Journey', 'genesis-child' ) );
 
+//define('DONOTCACHEPAGE', true);
+
+
 //* Add HTML5 markup structure from Genesis
 add_theme_support( 'html5' );
 
@@ -199,3 +202,105 @@ function custom_excerpt_length( $length ) {
 }
 
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+
+function show_disease_sidebar( $slug = '' )
+{
+	
+	$diseases = get_terms(
+		array(
+			'taxonomy' => 'disease',
+			'hide_empty' => false,
+			'parent' => 0,
+			'order_by' => 'name',
+			'order' => 'ASC'
+		)
+	);
+	
+	echo '<div class="disease-sidebar">';
+	echo '<h3>Disease Categories</h3>';
+	echo '<ul class="diseases">';
+	
+	// check if the slug is empty.  If it is, then it must be ALL
+	
+	if( empty( $slug ) )
+	{
+		echo '<li class="current">';
+	}
+	else
+	{
+		echo '<li>';
+	}
+	
+	echo '<a href="'.site_url('specialty_drug').'">All</a></li>';
+	
+	
+	// loop through the diseases
+	foreach( $diseases as $disease )
+	{
+		if( $slug == $disease->slug )
+		{
+			$style = 'font-weight:bold';
+		}
+		else
+		{
+			$style = '';
+		}
+				
+		echo '<li><a href="'.site_url('disease').'/'.$disease->slug.'" style="'.$style.'">'.$disease->name.'</a>';
+		
+		// get children diseases
+		$child_diseases = get_terms(
+			array(
+				'taxonomy' => 'disease',
+				'hide_empty' => false,
+				'parent' => $disease->term_id,
+				'order_by' => 'name',
+				'order' => 'ASC'
+			)
+		);
+		
+		// if there are children diseases
+		if( count( $child_diseases ) > 0 )
+		{
+			echo '<ul class="sub-disease">';
+			
+			// loop through the children
+			foreach( $child_diseases as $child )
+			{
+				if( $slug == $child->slug )
+				{
+					echo '<li class="current">';
+				}
+				else
+				{
+					echo '<li>';
+				}
+				
+				echo '<a href="'.site_url('disease').'/'.$child->slug.'">'.$child->name.'</a></li>';
+			}
+			
+			echo '</ul>';
+		}
+		
+		echo '</li>';
+	}
+	
+	echo '</ul>';
+	echo '</div>';
+}
+
+function show_small_search_form( $s = '' )
+{
+	echo	'<form action="' . home_url( '/' ) . '" role="search" class="small-search" method="get">
+				<div class="my-row">
+					<div class="column-left form-control-column">
+						<input type="text" class="form-control input-lg" placeholder="enter brand or generic name" value="'.$s.'" name="s"/> 
+					</div>
+					<div class="column-left button-column">
+						 <input type="hidden" value="specialty_drugs" name="post_type" id="post_type" />
+						<button type="submit" class="btn btn-cta">Search Drugs</button>
+					</div>
+				</div>
+			</form>';
+}
